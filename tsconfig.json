@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "lib": [
+      "esnext",
+      "esnext.asynciterable"
+    ],
+    "skipLibCheck": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "strict": true,
+    "types": [
+      "node",
+      "@types/node",
+      "./apps/awtrix"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

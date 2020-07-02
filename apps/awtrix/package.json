@@ -1,0 +1,10 @@
+{
+  "name": "@awtrix/app",
+  "description": "The base Awtrix app, to be used by all other apps.",
+  "version": "1.0.0",
+  "author": "Christopher Mühl <github@padarom.xyz>",
+  "main": "src/index.ts",
+  "contributors": [
+    "Stephan Mühl <admin@blueforcer.de>"
+  ]
+}

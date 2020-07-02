@@ -1,0 +1,15 @@
+{
+    "name": "@awtrix/publisher",
+    "description": "The publishing tool used internally by Awtrix 3 to automatically build and publish apps",
+    "version": "0.1.0",
+    "author": "Christopher Mühl <github@padarom.xyz>",
+    "contributors": [
+        "Stephan Mühl <admin@blueforcer.de>"
+    ],
+    "devDependencies": {
+        "@types/node": "^14.0.14"
+    },
+    "dependencies": {
+        "typescript": "^3.9.6"
+    }
+}
