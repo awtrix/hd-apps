@@ -1,15 +1,23 @@
 {
-    "name": "@awtrix/publisher",
-    "description": "The publishing tool used internally by Awtrix 3 to automatically build and publish apps",
-    "version": "0.1.0",
-    "author": "Christopher Mühl <github@padarom.xyz>",
-    "contributors": [
-        "Stephan Mühl <admin@blueforcer.de>"
-    ],
-    "devDependencies": {
-        "@types/node": "^14.0.14"
-    },
-    "dependencies": {
-        "typescript": "^3.9.6"
-    }
+  "name": "@awtrix/publisher",
+  "description": "The publishing tool used internally by Awtrix 3 to automatically build and publish apps",
+  "version": "0.1.0",
+  "author": "Christopher Mühl <github@padarom.xyz>",
+  "scripts": {
+    "compile": "ts-node lib/compiler.ts",
+    "publish": "ts-node lib/publisher.ts"
+  },
+  "contributors": [
+    "Stephan Mühl <admin@blueforcer.de>"
+  ],
+  "devDependencies": {
+    "@awtrix/app": "^1.0.0",
+    "@types/node": "^14.0.14"
+  },
+  "dependencies": {
+    "libnpm": "^3.0.1",
+    "ts-node": "^8.10.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.6"
+  }
 }
