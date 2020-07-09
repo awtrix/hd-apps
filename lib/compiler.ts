@@ -36,4 +36,5 @@ compile(path.join(appPath, packageJson.main), {
   module: ts.ModuleKind.CommonJS,
   outDir: path.join(appPath, 'dist'),
   esModuleInterop: true,
+  declaration: process.argv[2] == 'awtrix',
 })

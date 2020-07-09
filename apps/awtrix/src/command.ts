@@ -48,7 +48,7 @@ export default class Command {
   }
 
   static bitmap (icon: RandomBitmap, position?: Position, size?: [number, number]): Command {
-    let bitmap = Buffer.from(Uint16Array.from(icon))
+    let bitmap = Buffer.from(Uint16Array.from(icon).buffer).swap16()
 
     position = position || [0, 0]
     size = size || [8, 8]
@@ -56,15 +56,10 @@ export default class Command {
     let x = Buffer.alloc(2)
     let y = Buffer.alloc(2)
 
-    let width = Buffer.alloc(2)
-    let height = Buffer.alloc(2)
-
     x.writeInt16BE(position[0])
     y.writeInt16BE(position[1])
-    width.writeInt16BE(size[0])
-    height.writeInt16BE(size[1])
 
-    return new Command(CommandBit.Bitmap, x, y, width, height, bitmap)
+    return new Command(CommandBit.Bitmap, x, y, Buffer.from(size), bitmap)
   }
 
   static clear (): Command {

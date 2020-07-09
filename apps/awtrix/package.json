@@ -1,7 +1,7 @@
 {
   "name": "app",
   "description": "The base Awtrix app, to be used by all other apps.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Christopher Mühl <github@padarom.xyz>",
   "main": "src/index.ts",
   "contributors": [

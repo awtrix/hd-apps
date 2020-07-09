@@ -1,7 +1,7 @@
 {
   "name": "time",
   "description": "Shows time, date and the day of the week.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Christopher Mühl <github@padarom.xyz>",
   "main": "src/index.ts",
   "contributors": [
