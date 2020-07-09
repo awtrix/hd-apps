@@ -1,0 +1,15 @@
+{
+  "name": "template",
+  "description": "A description for your awesome new Awtrix app.",
+  "version": "0.1.0",
+  "author": "Your Name <email@domain.com>",
+  "main": "src/index.ts",
+  "awtrix": {
+    "icon": 1,
+    "settings": {
+    }
+  },
+  "peerDependencies": {
+    "@awtrix/app": "^1.0"
+  }
+}

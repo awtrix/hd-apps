@@ -1,4 +1,5 @@
 import colorToBuffer, { Color } from './utils/colors'
+import { RandomBitmap } from './types/icon'
 
 enum CommandBit {
   Text = 0,
@@ -44,6 +45,26 @@ export default class Command {
     y.writeInt16BE(position[1])
 
     return new Command(CommandBit.Text, x, y, colorToBuffer(color), textBuffer)
+  }
+
+  static bitmap (icon: RandomBitmap, position?: Position, size?: [number, number]): Command {
+    let bitmap = Buffer.from(Uint16Array.from(icon))
+
+    position = position || [0, 0]
+    size = size || [8, 8]
+
+    let x = Buffer.alloc(2)
+    let y = Buffer.alloc(2)
+
+    let width = Buffer.alloc(2)
+    let height = Buffer.alloc(2)
+
+    x.writeInt16BE(position[0])
+    y.writeInt16BE(position[1])
+    width.writeInt16BE(size[0])
+    height.writeInt16BE(size[1])
+
+    return new Command(CommandBit.Bitmap, x, y, width, height, bitmap)
   }
 
   static clear (): Command {

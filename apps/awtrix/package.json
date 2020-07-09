@@ -1,10 +1,16 @@
 {
-  "name": "@awtrix/app",
+  "name": "app",
   "description": "The base Awtrix app, to be used by all other apps.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Christopher Mühl <github@padarom.xyz>",
   "main": "src/index.ts",
   "contributors": [
     "Stephan Mühl <admin@blueforcer.de>"
-  ]
+  ],
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0"
+  }
 }

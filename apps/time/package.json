@@ -1,52 +1,52 @@
 {
-    "name": "time",
-    "description": "Shows time, date and the day of the week.",
-    "version": "0.1.0",
-    "author": "Christopher Mühl <github@padarom.xyz>",
-    "main": "src/index.ts",
-    "contributors": [
-        "Stephan Mühl <admin@blueforcer.de>"
-    ],
-    "awtrix": {
-        "icon": 13,
-        "settings": {
-            "showSeconds": {
-                "type": "boolean",
-                "default": true
-            },
-            "showWeekday": {
-                "type": "boolean",
-                "default": false
-            },
-            "showDate": {
-                "type": "boolean",
-                "default": false
-            },
-            "12hourFormat": {
-                "type": "boolean",
-                "default": false
-            },
-            "disableBlinking": {
-                "type": "boolean",
-                "default": false
-            },
-            "dateFormat": {
-                "type": "boolean",
-                "default": false
-            },
-            "startSunday": {
-                "type": "boolean",
-                "default": false
-            }
-        }
-    },
-    "dependencies": {
-        "moment": "^2.27.0"
-    },
-    "devDependencies": {
-        "@types/moment": "^2.13.0"
-    },
-    "peerDependencies": {
-        "@awtrix/app": "^1.0"
+  "name": "time",
+  "description": "Shows time, date and the day of the week.",
+  "version": "0.1.1",
+  "author": "Christopher Mühl <github@padarom.xyz>",
+  "main": "src/index.ts",
+  "contributors": [
+    "Stephan Mühl <admin@blueforcer.de>"
+  ],
+  "awtrix": {
+    "icon": 13,
+    "settings": {
+      "showSeconds": {
+        "type": "boolean",
+        "default": true
+      },
+      "showWeekday": {
+        "type": "boolean",
+        "default": false
+      },
+      "showDate": {
+        "type": "boolean",
+        "default": false
+      },
+      "12hourFormat": {
+        "type": "boolean",
+        "default": false
+      },
+      "disableBlinking": {
+        "type": "boolean",
+        "default": false
+      },
+      "dateFormat": {
+        "type": "boolean",
+        "default": false
+      },
+      "startSunday": {
+        "type": "boolean",
+        "default": false
+      }
     }
+  },
+  "dependencies": {
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "@types/moment": "^2.13.0"
+  },
+  "peerDependencies": {
+    "@awtrix/app": "^1.0"
+  }
 }

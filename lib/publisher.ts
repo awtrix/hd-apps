@@ -1,5 +1,6 @@
 import path from 'path'
 import fs from 'fs'
+import exec from 'child_process'
 // @ts-ignore
 import libnpm from 'libnpm'
 
@@ -13,18 +14,21 @@ import libnpm from 'libnpm'
   const packageJson = require(path.join(appPath, 'package.json'))
   const mainPath = path.parse(packageJson.main)
 
-  const targetPath = path.join('dist', ...mainPath.dir.split('/').slice(1), mainPath.base)
-  packageJson.main = targetPath.replace(/\\/, '/')
+  if (mainPath.ext == '.ts') {
+    const fileName = `${mainPath.name}.js`
+    const targetPath = path.join('dist', ...mainPath.dir.split('/').slice(1), fileName)
+    packageJson.main = targetPath.replace(/\\/, '/')
+  }
 
-  console.log({
-    ...packageJson,
-    npmVersion: `awtrix@${packageJson.version}`
-  })
+  // TODO: We need to package the app before uploading ...
+
   await libnpm.publish({
     ...packageJson,
-    npmVersion: `awtrix@${packageJson.version}`
+    name: `@awtrix/${packageJson.name}-app`,
+    npmVersion: `awtrix@${packageJson.version}`,
   }, appPath, {
-    access: 'public'
+    access: 'public',
+    token: fs.readFileSync('./npm_token', 'utf-8').trim(),
   })
 
   console.log('Successfully published.')
