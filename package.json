@@ -15,9 +15,12 @@
     "@types/node": "^14.0.14"
   },
   "dependencies": {
+    "@vue/cli-service": "^4.5.4",
     "libnpm": "^3.0.1",
     "ts-node": "^8.10.2",
     "tslib": "^2.0.0",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.6",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
   }
 }

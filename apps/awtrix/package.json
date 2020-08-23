@@ -3,14 +3,11 @@
   "description": "The base Awtrix app, to be used by all other apps.",
   "version": "1.0.3",
   "author": "Christopher Mühl <github@padarom.xyz>",
-  "main": "src/index.ts",
+  "main": "src/Awtrix.vue",
   "contributors": [
     "Stephan Mühl <admin@blueforcer.de>"
   ],
   "dependencies": {
-    "axios": "^0.19.2"
-  },
-  "devDependencies": {
-    "@types/axios": "^0.14.0"
+    "vue": "^2.6.12"
   }
 }
