@@ -1,0 +1,12 @@
+{
+  "name": "yeelight-app",
+  "version": "0.1.0",
+  "build": {
+    "frontend": true,
+    "backend": false,
+    "assets": true
+  },
+  "dependencies": {
+    "yeelight-node": "^1.1.4"
+  }
+}
