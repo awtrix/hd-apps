@@ -1,0 +1,15 @@
+{
+  "name": "pihole",
+  "version": "0.0.1",
+  "awtrix": {
+    "frontend": true,
+    "backend": true,
+    "assets": true
+  },
+  "dependencies": {
+    "@awtrix/common": "^0.1.3"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^2.0.3"
+  }
+}
