@@ -1,2 +1,2 @@
-# Awtrix 3 Apps
-This is the central repository for Awtrix 3 apps.
+# Awtrix HD Apps
+This is the central repository for Awtrix HD apps.
