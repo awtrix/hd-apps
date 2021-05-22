@@ -28,9 +28,9 @@
 </template>
 
 <script lang="ts">
-import { createFrontend } from "@awtrix/common";
+import { defineComponent } from '@awtrix/common'
 
-export default createFrontend({
+export default defineComponent({
   data() {
     return {
       ip: "192.168.10.67",

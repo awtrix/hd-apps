@@ -7,11 +7,9 @@ export default (App: typeof BackendApp) => {
     register() {
       const net = require('net')
       console.log(this.io.sockets)
-      console.log('My app was successfully registered.')
       var TCPclient = new net.Socket();
 
       TCPclient.on('data', (data) => {
-        console.log('Received: ' + data);
         this.io.emit('quickdeck', data.toString());
       });
 
@@ -34,7 +32,7 @@ export default (App: typeof BackendApp) => {
 
       // Add a 'close' event handler for the client socket
       TCPclient.on('close', function () {
-        TCPclient.connect(8888, 'localhost')
+        TCPclient.connect(8888, '192.168.178.20')
       });
 
     };

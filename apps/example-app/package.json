@@ -1,10 +1,10 @@
 {
-  "name": "overwatch",
+  "name": "example",
   "version": "0.1.0",
   "awtrix": {
     "build": {
       "frontend": true,
-      "backend": false,
+      "backend": true,
       "assets": false
     }
   },

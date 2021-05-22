@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "web": {
+    "port": 8081
+  },
+  "apps": {
+    "rotation": [{
+      "id": "devapp_",
+      "name": "spacex",
+      "version": "0.1.0",
+      "config": {}
+    }],
+    "background": [],
+    "available": [{
+      "name": "spacex",
+      "version": "0.1.0"
+    }]
+  }
+}

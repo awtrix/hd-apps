@@ -1,12 +1,16 @@
 {
-  "name": "peopleinspace",
-  "version": "0.0.1",
+  "name": "PeopleInSpace",
+  "version": "0.1.0",
   "awtrix": {
-    "frontend": true,
-    "backend": true,
-    "assets": true
+    "build": {
+      "frontend": true,
+      "backend": false,
+      "assets": false
+    }
   },
   "dependencies": {
-    "@awtrix/common": "^0.1.0"
+    "@awtrix/common": "^0.1",
+    "esbuild": "^0.11.11",
+    "stylus": "^0.54.8"
   }
 }

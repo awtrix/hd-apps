@@ -1,15 +1,16 @@
 {
-  "name": "overwatch",
+  "name": "example",
   "version": "0.1.0",
   "awtrix": {
     "build": {
       "frontend": true,
-      "backend": false,
+      "backend": true,
       "assets": false
     }
   },
   "dependencies": {
     "@awtrix/common": "^0.1",
+    "@p803/vue-facebook": "^2.1.0",
     "esbuild": "^0.11.11"
   }
 }

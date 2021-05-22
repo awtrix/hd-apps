@@ -1,4 +1,5 @@
 <template>
+<div class="app">
     <div v-if="appdata" class="m-2 grid grid-cols-10 grid-rows-3 gap-2 h-full">
         <div
             v-for="item in appdata"
@@ -17,12 +18,13 @@
             </div>
         </div>
     </div>
+      </div>
 </template>
 
-<script lang="ts">
-import { createFrontend } from "@awtrix/common";
+<script>
+import { defineComponent } from "@awtrix/common";
 
-export default createFrontend({
+export default defineComponent({
     data() {
         return {
             appdata: [],
@@ -62,6 +64,7 @@ export default createFrontend({
 </script>
 
 <style lang="stylus">
+
 .icon {
     height: 60px;
     width: 60px;

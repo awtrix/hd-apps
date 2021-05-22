@@ -16,7 +16,7 @@
                 </div>
                 <div class="pl-4 pt-4">
                     <div class="text-white text-6xl">
-                        {{ Math.round(weather.main.temp) }}°C
+                        {{ Msath.round(weather.main.temp) }}°C
                     </div>
                     <div class="text-gray-300 ml-3 text-l">
                         {{ weather.weather[0].description }}
@@ -33,9 +33,9 @@
 </template>
 
 <script>
-import { createFrontend } from "@awtrix/common";
+import { defineComponent } from '@awtrix/common'
 
-export default createFrontend({
+export default defineComponent({
     data() {
         return {
             api_key: "db41ee048bee3ecc248a1ec47dfe3d21",
