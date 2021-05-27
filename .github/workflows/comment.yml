@@ -1,0 +1,5 @@
+on:
+  # Run on every push
+  push:
+    branches-ignore:
+      - main

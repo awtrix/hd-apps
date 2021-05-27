@@ -1,26 +1,23 @@
 {
   "name": "@awtrix/publisher",
-  "description": "The publishing tool used internally by Awtrix 3 to automatically build and publish apps",
+  "private": true,
+  "description": "The publishing tool used internally by Awtrix HD to automatically build and publish apps",
   "version": "0.1.0",
   "author": "Christopher Mühl <github@padarom.xyz>",
   "scripts": {
-    "compile": "ts-node lib/compiler.ts",
-    "publish": "ts-node lib/publisher.ts"
+    "comment": "esr scripts/comment/index.ts",
+    "publish": "esr scripts/publish/index.ts"
   },
   "contributors": [
     "Stephan Mühl <admin@blueforcer.de>"
   ],
   "devDependencies": {
-    "@awtrix/app": "file://./apps/awtrix",
-    "@types/node": "^14.0.14"
+    "@types/node": "^14.17.1",
+    "libnpm": "^3.0.1",
+    "typescript": "^3.9.9"
   },
   "dependencies": {
-    "@vue/cli-service": "^4.5.4",
-    "libnpm": "^3.0.1",
-    "ts-node": "^8.10.2",
-    "tslib": "^2.0.0",
-    "typescript": "^3.9.6",
-    "vue": "^2.6.12",
-    "vue-template-compiler": "^2.6.12"
+    "@awtrix/app": "^0.2.0",
+    "esbuild-runner": "^1.4.0"
   }
 }
